@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter<String> adapterH;
     private RelativeLayout r;
 
-    //private RelativeLayout rto = null ;
+
 
 
     @Override
@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //bt = findViewById(R.id.t1);
-        //r=findViewById(R.id.t);
+
         Lout = findViewById(R.id.touch);
 
 
@@ -61,22 +60,13 @@ public class MainActivity extends AppCompatActivity {
 
         listViewR =  findViewById(R.id.listViewR);
         listViewL=findViewById(R.id.listviewL);
-//        listViewL.setOnTouchListener(null);
-//        listViewR.setOnTouchListener(null);
+
         count=1;
         listR = new ArrayList<String>();
         listL=new ArrayList<String>();
         adapterL = new ChatUserAdapter(this,R.layout.bot_bubble, listL);
         adaptorR=new ChatUserAdapter(this,R.layout.me_bubble,listR);
 
-        //list.add("AnuBoy");
-
-//             bt.setOnClickListener(new View.OnClickListener() {
-//                 @Override
-//                 public void onClick(View v) {
-//                     ToCall();
-//                 }
-//             });
 
         Lout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,45 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 ToCall();
             }
         });
-//        Lout.setOnTouchListener(new View.OnTouchListener()
-//        {
-//
-//            @Override
-//            public boolean onTouch(View v, MotionEvent event) {
-//                int action = event.getActionMasked();
-//
-////                switch(action) {
-////                    case (MotionEvent.ACTION_DOWN) :
-////                        Toast.makeText(getApplicationContext(),"Action was Down", Toast.LENGTH_SHORT).show();
-////                        return true;
-////                    case (MotionEvent.ACTION_MOVE) :
-////                        Toast.makeText(getApplicationContext(),"Action was Move", Toast.LENGTH_SHORT).show();
-////                        return true;
-////                    case (MotionEvent.ACTION_UP) :
-////
-////                        Toast.makeText(getApplicationContext(),"Action was Up", Toast.LENGTH_SHORT).show();
-////                        return true;
-////                    case (MotionEvent.ACTION_CANCEL) :
-////                        Toast.makeText(getApplicationContext(),"Action was Cancelled", Toast.LENGTH_SHORT).show();
-////                        return true;
-////                    case (MotionEvent.ACTION_OUTSIDE) :
-////                        Toast.makeText(getApplicationContext(),"Movement occurred outside bounds ", Toast.LENGTH_SHORT).show();
-////                        return true;
-////                    default :
-////                        return true;
-////                }
-//
-//                if (action== MotionEvent.ACTION_DOWN) {
-//                    Toast.makeText(getApplicationContext(), "clicked", Toast.LENGTH_SHORT).show();
-//                    ToCall();
-//                    return true;
-//                }else if(action==MotionEvent.ACTION_MOVE){
-//
-//                    return false;
-//                }
-//                return true;
-//            }
-//        });
+
 
     }
 
@@ -148,16 +100,15 @@ public class MainActivity extends AppCompatActivity {
 
                         if (count % 2 == 0) {
                             listR.add(chat);
-                            // listL.add(null);
-                            // setVisible();
+
                             listViewR.setAdapter(adaptorR);
-                            // count++;
+
                         }
                         if(count%2==1){
                             listL.add(chat);
-                            //listR.add(null);
+
                             listViewL.setAdapter(adapterL);
-                            //count++;
+
                         }
 
 
