@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "590193880566",
+    "firebase_url": "https://reteivingdata.firebaseio.com",
+    "project_id": "reteivingdata",
+    "storage_bucket": "reteivingdata.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590193880566:android:a4a00d88e50d41d4",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.reteivingdata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590193880566-5mu2ijmrq39v2iv0cf3ce92rvq5undl3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.reteivingdata",
+            "certificate_hash": "62c1f375e11f63cff635d0caa74451c43e90baea"
+          }
+        },
+        {
+          "client_id": "590193880566-sio8cmq0n3ovakr04sf35l5i63g164qu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2ADFabR4ivT-AoxoUHQGQE7EsPW25Ebs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590193880566-sio8cmq0n3ovakr04sf35l5i63g164qu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
